@@ -30,7 +30,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-from google.colab import drive
-drive.mount('/content/drive')
+['headers = {', "        'Access-Control-Allow-Origin': '*',", "        'Access-Control-Allow-Methods': 'GET',", "        'Access-Control-Allow-Headers': 'Content-Type',", "        'accept': '*/*',"]
+...
+['', '  url = f"https://pta.trunojoyo.ac.id/c_search/byprod/10/{i}"', '  req = requests.get(url,headers=headers,timeout=50,verify=False)', '  if(req.status_code == 404):', '      break']
 -------------------
 
